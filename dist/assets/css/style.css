@@ -301,4 +301,10 @@ header {
   padding: 10px 25px;
   font-size: 18px; }
 
+#beneficios button {
+  margin: 20px 20px; }
+
+#beneficios .title {
+  font-size: 5rem; }
+
 /*# sourceMappingURL=maps/style.css.map */

@@ -18,7 +18,7 @@ const Planes = (update) => {
     const labelOrigin = $('<label><small class="">Partida</small></label>');
     const inputOrigin = $('<input type="text" class="form-control input-consult" id="fecha_partida" placeholder="dd/mm/yy">');
 
-    const arrow = $(' <div class="col-sm-1 hidden-xs hidden-sm"><div class="form-group"><img src="assets/images/icon_arrow_blue.png" alt=""></div></div>');
+    const arrow = $(' <div class="col-sm-1 hidden-xs hidden-sm"><div class="form-group"><img src="assets/images/icon_arrow_blue.png" alt=""></div></div></div>');
 
     const dateDiv2 = $('<div class="col-sm-2"></div>');
     const divDateRetorno = $('<div class="form-group"></div>');
