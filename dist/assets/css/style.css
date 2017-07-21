@@ -1,0 +1,304 @@
+.fucsia {
+  color: #ff005b; }
+
+.azul {
+  color: #006ab8; }
+
+.celeste {
+  color: #41b5e7; }
+
+.blanco {
+  color: #ffffff; }
+
+@font-face {
+  font-family: "Omnes Regular";
+  src: url("../fonts/omnes-regular-webfont.ttf"); }
+
+@font-face {
+  font-family: "Omnes Medium";
+  src: url("../fonts/omnes-medium-webfont.ttf"); }
+
+@font-face {
+  font-family: "Omnes SemiBold";
+  src: url("../fonts/omnes-semibold-webfont.ttf"); }
+
+.omnes-regular {
+  font-family: "Omnes Regular"; }
+
+.omnes-medium {
+  font-family: "Omnes Medium"; }
+
+.omnes-semibold {
+  font-family: "Omnes SemiBold"; }
+
+.divAutocomplete {
+  position: relative; }
+
+.autocomplete {
+  display: none;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: scroll;
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+  left: -1px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; }
+
+.item-place {
+  height: 30px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 5px;
+  overflow: hidden; }
+  .item-place__img {
+    width: 20px;
+    height: 20px; }
+  .item-place__title {
+    padding-left: 10px;
+    font-size: 13px; }
+
+.cabecera {
+  background-image: url(../images/cabecera2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px; }
+  .cabecera label {
+    color: #006ab8; }
+
+.bg-azul {
+  background-color: #006ab8; }
+
+.bg-sky {
+  background-color: #41b5e7; }
+
+.bg-gray {
+  background-color: #f6f3f7;
+  text-align: center; }
+
+#plan {
+  background-color: #ffffff; }
+  #plan table th {
+    border-bottom: 0;
+    color: #ffffff;
+    padding: 0; }
+  #plan table .plan {
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px; }
+  #plan table th:nth-child(2),
+  #plan table th:nth-child(3) {
+    width: 25%; }
+  #plan table td {
+    vertical-align: middle;
+    border-top: 0;
+    padding: 0; }
+
+#ui-datepicker-div {
+  padding: 15px; }
+
+.ui-widget.ui-widget-content {
+  border: none;
+  background: #f7f7f7; }
+
+.ui-datepicker-month {
+  text-transform: uppercase; }
+
+.ui-state-default {
+  border: none !important; }
+
+.ui-datepicker td, .ui-datepicker th, .ui-datepicker td, .ui-datepicker th {
+  border: 1px solid #efeff0; }
+
+a.ui-state-default.ui-state-highlight {
+  border: 1px solid #ff317b;
+  background: #ff317b;
+  color: #ffffff; }
+
+.ui-widget-header {
+  background: #85d6f6;
+  color: #ffffff; }
+  .ui-widget-header .ui-icon {
+    background-image: none; }
+  .ui-widget-header .ui-state-hover {
+    border: 1px solid #85d6f6;
+    background: #85d6f6;
+    color: white; }
+
+.ui-icon, .ui-widget-content .ui-icon {
+  background-image: none; }
+
+#oferta {
+  background-color: #006ab8; }
+  #oferta h1:nth-child(2) {
+    font-size: 5.5rem; }
+
+.destino {
+  background-color: #ffffff !important; }
+  .destino .img-destino {
+    width: 100%;
+    height: 250px; }
+
+.btn-oferta {
+  padding: 5px 10px !important; }
+
+.caption {
+  padding: 10px;
+  overflow: hidden; }
+
+.caracteristicas {
+  padding-top: 8em; }
+  .caracteristicas .beneficios {
+    padding: 1em; }
+    .caracteristicas .beneficios li {
+      list-style: none;
+      margin: .8em;
+      padding: 0;
+      font-size: .8em;
+      height: 30px; }
+
+.planes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.icon-container {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: .65em;
+  background-color: #f6f3f7;
+  text-align: center;
+  width: 120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 30px; }
+
+.icon-true {
+  width: 20px;
+  height: 20px;
+  padding: .5em;
+  background: url("../images/icon_check.png") center center no-repeat;
+  background-size: contain;
+  background-color: #f6f3f7; }
+
+.icon-false {
+  width: 20px;
+  height: 20px;
+  padding: .5em;
+  background: url("../images/icon_cruz.png") center center no-repeat;
+  background-size: contain;
+  background-color: #f6f3f7; }
+
+div.detalle > div.container > div.row > div.planes h1 {
+  color: #fff;
+  margin: .2em;
+  border-radius: .8em;
+  width: 6em;
+  font-size: 1.9em;
+  text-align: center;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-bottom: .8em; }
+  div.detalle > div.container > div.row > div.planes h1 span {
+    display: inline-block; }
+    div.detalle > div.container > div.row > div.planes h1 span:before {
+      content: "S/.";
+      font-size: .5em;
+      position: relative;
+      top: -10px;
+      padding-right: .5em; }
+    div.detalle > div.container > div.row > div.planes h1 span:after {
+      content: "Por persona";
+      font-size: .4em;
+      margin-left: .5em; }
+
+div.detalle > div.container > div.row > div:nth-child(2) h1 {
+  background: #006ab8; }
+
+div.detalle > div.container > div.row > div:nth-child(3) h1 {
+  background: #41b5e7; }
+
+body {
+  margin: 0 auto;
+  background-image: url(../images/cabecera.png);
+  background-size: 100% 580px;
+  background-repeat: no-repeat;
+  background-position: top; }
+
+@media (max-width: 425px) {
+  body {
+    background-size: 621px; } }
+
+header {
+  padding-top: 20px; }
+  header span {
+    padding: 5px 10px;
+    border-left: 2px solid #41b5e7;
+    margin-left: 10px;
+    color: #006ab8;
+    font-size: 15px; }
+  header a {
+    color: #006ab8;
+    padding: 0 10px;
+    font-size: 15px; }
+  header .menu {
+    background-color: transparent !important;
+    border: 0; }
+
+@media (max-width: 320px) {
+  header img {
+    width: 180px; } }
+
+#banner {
+  margin-top: 8%; }
+  #banner p:nth-child(1) {
+    font-size: 22px; }
+  #banner p:nth-child(2) {
+    font-size: 9.5rem;
+    line-height: 75px; }
+  #banner p:nth-child(3) {
+    font-size: 16px; }
+
+@media (max-width: 425px) {
+  #banner {
+    margin-top: 0; } }
+
+#cotiza {
+  background-color: white;
+  border-radius: 30px 0 0 0;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  box-shadow: 1px 1px 6px #dedede;
+  padding: 0 0 15px 0; }
+  #cotiza .maletin {
+    margin-top: 17px;
+    width: 30px; }
+  #cotiza .panel-body {
+    padding: 6px !important; }
+
+.input-coti {
+  outline: none;
+  border: 0;
+  color: #000;
+  width: 98%; }
+
+.btn-cotizar {
+  background-color: #ff005b;
+  border-radius: 3px;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 25px;
+  font-size: 18px; }
+
+/*# sourceMappingURL=maps/style.css.map */
