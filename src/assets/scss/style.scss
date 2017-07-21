@@ -1,0 +1,148 @@
+
+
+$color1: #ff005b;
+$color2: #006ab8;
+$color3: #41b5e7;
+$white: #ffffff;
+.fucsia {
+    color: $color1;
+}
+
+.azul {
+    color: $color2;
+}
+
+.celeste {
+    color: $color3;
+}
+
+.blanco {
+    color: $white;
+}
+
+@font-face {
+    font-family: "Omnes Regular";
+    src: url("../fonts/omnes-regular-webfont.ttf");
+}
+
+@font-face {
+    font-family: "Omnes Medium";
+    src: url("../fonts/omnes-medium-webfont.ttf");
+}
+
+@font-face {
+    font-family: "Omnes SemiBold";
+    src: url("../fonts/omnes-semibold-webfont.ttf");
+}
+
+.omnes-regular {
+    font-family: "Omnes Regular";
+}
+
+.omnes-medium {
+    font-family: "Omnes Medium";
+}
+
+.omnes-semibold {
+    font-family: "Omnes SemiBold";
+}
+@import "autocomplete";
+@import "paquetes";
+@import "datapicker";
+@import "ofertas";
+@import "planesTabla";
+
+
+body {
+    margin: 0 auto;
+    background-image: url(../images/cabecera.png);
+    background-size: 100% 580px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+@media (max-width: 425px) {
+    body {
+        background-size: 621px;
+    }
+}
+
+header {
+    padding-top: 20px;
+    span {
+        padding: 5px 10px;
+        border-left: 2px solid $color3;
+        margin-left: 10px;
+        color: $color2;
+        font-size: 15px;
+    }
+    a {
+        color: $color2;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    .menu {
+        background-color: transparent !important;
+        border: 0;
+    }
+}
+
+@media(max-width:320px) {
+    header {
+        img {
+            width: 180px;
+        }
+    }
+}
+
+#banner {
+    margin-top: 8%;
+    p:nth-child(1) {
+        font-size: 22px;
+    }
+    p:nth-child(2) {
+        font-size: 9.5rem;
+        line-height: 75px;
+    }
+    p:nth-child(3) {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 425px) {
+    #banner {
+        margin-top: 0;
+    }
+}
+
+#cotiza {
+    background-color: white;
+    border-radius: 30px 0 0 0;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    box-shadow: 1px 1px 6px #dedede;
+    padding: 0 0 15px 0;
+    .maletin {
+        margin-top: 17px;
+        width: 30px;
+    }
+    .panel-body {
+        padding: 6px !important;
+    }
+}
+
+.input-coti {
+    outline: none;
+    border: 0;
+    color: #000;
+    width: 98%;
+}
+
+.btn-cotizar {
+    background-color: $color1;
+    border-radius: 3px;
+    color: $white;
+    border: 0;
+    padding: 10px 25px;
+    font-size: 18px;
+}

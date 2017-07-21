@@ -1,0 +1,43 @@
+.cabecera {
+    background-image: url(../images/cabecera2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+    label {
+        color: $color2;
+    }
+}
+.bg-azul{
+    background-color: $color2;
+}
+.bg-sky{
+    background-color: $color3;
+}
+.bg-gray{
+    background-color: #f6f3f7;
+    text-align: center;
+}
+#plan {
+    background-color: $white;
+    table {
+        th {
+            border-bottom: 0;
+            color: $white;
+            padding: 0;
+        }
+        .plan {
+            margin: 5px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        th:nth-child(2),
+        th:nth-child(3) {
+            width: 25%;
+        }
+        td {
+            vertical-align: middle;
+            border-top: 0;
+            padding: 0;
+        }
+    }
+}

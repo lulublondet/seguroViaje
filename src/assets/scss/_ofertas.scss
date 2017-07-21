@@ -1,0 +1,20 @@
+#oferta{
+    background-color: $color2;
+    h1:nth-child(2){
+        font-size: 5.5rem;
+    }
+}
+.destino{
+    background-color: $white !important;
+    .img-destino{
+        width: 100%;
+        height: 250px;
+    }
+}
+.btn-oferta{
+    padding: 5px 10px !important;
+}
+.caption{
+    padding: 10px;
+    overflow: hidden;
+}

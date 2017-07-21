@@ -1,0 +1,99 @@
+
+.caracteristicas {
+	padding-top: 8em;
+
+	.beneficios {
+		padding: 1em;
+		li {
+			list-style: none;
+			margin: .8em;
+			padding: 0;
+			font-size: .8em;
+			height: 30px;
+		}
+	}
+}
+
+
+.planes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.icon-container{
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: .65em;
+	background-color: #f6f3f7;
+    text-align: center;
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
+
+
+.icon-true{
+	width: 20px;
+	height: 20px;
+	padding: .5em;
+	background: url('../images/icon_check.png') center center no-repeat;
+	background-size: contain;
+	background-color: #f6f3f7;
+}
+
+
+.icon-false{
+	width: 20px;
+	height: 20px;
+	padding: .5em;
+	background: url('../images/icon_cruz.png') center center no-repeat;
+	background-size: contain;
+	background-color: #f6f3f7;
+
+}
+
+
+div.detalle > div.container > div.row > div.planes  h1 {
+	color:#fff;
+	margin: .2em;
+    border-radius: .8em;
+	width: 6em;
+	font-size: 1.9em;
+	text-align: center;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	margin-bottom: .8em;
+	span {
+		display: inline-block;
+		&:before{
+			content: "S/.";
+			font-size: .5em;
+			position: relative;
+			top:-10px;
+			padding-right: .5em;
+		}
+
+		&:after{
+			content:"Por persona";
+			font-size: .4em;
+			margin-left: .5em;
+		}
+	}
+
+}
+
+
+
+div.detalle > div.container > div.row > div:nth-child(2)  h1 {
+	background:  $color2;
+}
+
+
+div.detalle > div.container > div.row > div:nth-child(3)  h1 {
+	background:  $color3;
+}
