@@ -377,7 +377,6 @@ const DetallePlanes = () => {
 }
 
 'use strict';
-
 const Formulario = (updated)=> {
   const section = $('<section></section>');
   const cotiza = $('<div class="row"></div>');
@@ -495,14 +494,58 @@ const Formulario = (updated)=> {
     keyup: function(e){
               if($(e.currentTarget).val() != ""){
                 postBuscarDestino($(this).val(), autocomplete);
-
               }else{
                 autocomplete.hide();
                 autocomplete.empty();
               }
+      }
 
-        }
   });
+
+  inputEmail.on("blur", function(e){
+     let regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+     if (regex.test($(this).val().trim())) {
+     } else {
+       inputEmail.val("");
+       inputEmail.focus();
+     }
+
+   });
+
+   inputOrigin.on("blur", function(e){
+      let regex = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
+      if (!regex.test($(this).val().trim())) {
+        inputOrigin.val("");
+        inputOrigin.focus();
+      }
+
+    });
+
+    inputReturn.on("blur", function(e){
+       let regex = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
+       if (!regex.test($(this).val().trim())) {
+         inputReturn.val("");
+         inputReturn.focus();
+       }
+
+     });
+
+     adults.on("change", function(e){
+       let cant_adults = $("#cantidad_adultos option:selected").val();
+       let cant_children = $("#cantidad_niños option:selected").val();
+       if(parseInt(cant_adults)+parseInt(cant_children)>=1){
+         let suma = parseInt(cant_adults)+parseInt(cant_children);
+       }
+
+     });
+     children.on("change", function(e){
+       let cant_adults = $("#cantidad_adultos option:selected").val();
+       let cant_children = $("#cantidad_niños option:selected").val();
+       if(parseInt(cant_adults)+parseInt(cant_children)>=1){
+         let suma = parseInt(cant_adults)+parseInt(cant_children);
+       }
+
+     });
 
   return section;
 }
