@@ -79,7 +79,7 @@ gulp.task('browser-sync',['nodemon'], function() {
     browserSync.init({
         injectChanges: true,
         files: ['/src/*.html', './dist/**/*.{html,css,js,png,jpg}'],
-       server: "./dist/",
+        server: "./dist/",
 
 		
 
