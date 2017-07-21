@@ -45,10 +45,10 @@ const Ofertas = (update) => {
     if(index==0){
       rowGallery.append(destinoItem(oferta, 'col-md-8', update));
     }else{
-      if(index!=4){
+     
         rowGallery.append(destinoItem(oferta, 'col-md-4', update));
 
-      }
+      
     }
   });
 
