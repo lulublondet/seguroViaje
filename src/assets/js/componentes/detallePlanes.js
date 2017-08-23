@@ -21,7 +21,8 @@ const DetallePlanes = () => {
 	jQuery.each(state.planes,(i,val)=>{
 		row.append(`<div class="planes col-xs-3 col-md-3"></div>`);
 		row.find('.planes').eq(i).append(`<h1>${val.tipo_plan}</h1>`);
-		row.find('h1').eq(i).append(`<span>${val.precio_plan}</span>`);
+		row.find('h1').eq(i).append(`<span>${val.precio_plan}</span><button>COMPRAR</button>`);
+		row.find('.planes').eq(i).append('<button>COMPRAR</button>')
 			jQuery.each(val.caracteristicas,(a,b)=>{
 				row.find('.planes').eq(i).append(`<div class="icon-container"><div class="icon-${b.aplica}"></div></div>`);
 			});
